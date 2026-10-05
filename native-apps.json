@@ -239,6 +239,25 @@
       }
     },
     {
+      "id": "octoscode",
+      "crate": "octoscode-module",
+      "source": { "git": "https://github.com/octos-org/octoscode-app.git", "rev": "b63aae540b7bbe2c8e9424775f71d3720743e087", "local": null },
+      "module": "octoscode_module::OCTOSCODE_MODULE",
+      "bin": null,
+      "default_features": false,
+      "crate_features": ["octosense-module"],
+      "implies": ["octos-core"],
+      "hosting": { "macos": "module", "windows": "module", "linux": "module", "android": "module", "ios": "module", "ohos": "module" },
+      "shells": { "desktop": "default", "phone": "default" },
+      "native_mobile": "feature",
+      "sandbox": { "network": "none", "processes": false },
+      "storage": { "accounts": false, "agent_workspace": "none", "external": ["home:rw"] },
+      "agent": {
+        "octos": []
+      },
+      "kernel": "coding"
+    },
+    {
       "id": "task",
       "crate": "makepad-task",
       "source": { "git": "https://github.com/OctoSense-org/makepad.git", "rev": "c155f61d0e1600d2ec474209374444a38a09a470", "local": ".sources/makepad/apps/task" },
